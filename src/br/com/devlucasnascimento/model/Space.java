@@ -6,11 +6,10 @@ public class Space {
     private final int expected;
     private final boolean fixed;
 
-
     public Space(int expected, boolean fixed) {
         this.expected = expected;
         this.fixed = fixed;
-        if (fixed){
+        if (fixed) {
             actual = expected;
         }
     }
@@ -24,7 +23,7 @@ public class Space {
         this.actual = actual;
     }
 
-    public void clearSpace(){
+    public void clearSpace() {
         setActual(null);
     }
 
